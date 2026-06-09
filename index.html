@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPERHARCOM | Moda Urbana</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome para redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN LÍDER: ENCABEZADO (feature/ENCABEZADO)            -->
+    <!-- ========================================================= -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>HYPER<span>HARCOM</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN COLABORADOR 1: CUERPO Y PIE DE PÁGINA             -->
+    <!-- (feature/CUERPO_FOOTER)                                   -->
+    <!-- ========================================================= -->
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Estilo que define tu esencia</h2>
+            <p>Descubre la nueva colección de ropa urbana HYPERHARCOM.</p>
+            <a href="#productos" class="btn-primary">Ver Colección</a>
+        </section>
+
+        <section id="productos" class="products">
+            <h2>Nuestros Productos Destacados</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img" style="background-color: #333;">👕</div>
+                    <h3>Camiseta Hyper Basic</h3>
+                    <p class="price">$25.00</p>
+                    <button class="btn-add" onclick="agregarAlCarrito('Camiseta Hyper Basic')">Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-img" style="background-color: #444;">🧥</div>
+                    <h3>Chaqueta Harcom Tech</h3>
+                    <p class="price">$85.00</p>
+                    <button class="btn-add" onclick="agregarAlCarrito('Chaqueta Harcom Tech')">Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-img" style="background-color: #555;">👖</div>
+                    <h3>Pantalón Urban Flow</h3>
+                    <p class="price">$45.00</p>
+                    <button class="btn-add" onclick="agregarAlCarrito('Pantalón Urban Flow')">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <textarea id="mensaje" placeholder="Tu mensaje o pedido..." required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+            <p id="form-response"></p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HYPERHARCOM</h3>
+                <p>Moda urbana para quienes marcan la diferencia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📧 info@hyperharcom.com</p>
+                <p>📞 +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HYPERHARCOM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
